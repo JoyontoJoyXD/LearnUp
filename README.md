@@ -112,7 +112,7 @@ python manage.py runserver
 
 ## Screenshots
 
-![Screenshot 1](screenshots/Screenshot (409).png)
+![Screenshot 1](LearnUp/screenshots/Screenshot (409).png)
 
 
 ---
