@@ -112,21 +112,24 @@ python manage.py runserver
 
 ## Screenshots
 
-<img src="screenshots/Screenshot409.png" alt="Screenshot 1" width="400">
-<img src="screenshots/Screenshot410.png" alt="Screenshot 2" width="400">
-<img src="screenshots/Screenshot411.png" alt="Screenshot 3" width="400">
-<img src="screenshots/Screenshot413.png" alt="Screenshot 4" width="400">
-<img src="screenshots/Screenshot414.png" alt="Screenshot 5" width="400">
-<img src="screenshots/Screenshot415.png" alt="Screenshot 6" width="400">
-<img src="screenshots/Screenshot416.png" alt="Screenshot 7" width="400">
-<img src="screenshots/Screenshot417.png" alt="Screenshot 8" width="400">
-<img src="screenshots/Screenshot418.png" alt="Screenshot 9" width="400">
-<img src="screenshots/Screenshot423.png" alt="Screenshot 10" width="400">
-<img src="screenshots/Screenshot424.png" alt="Screenshot 11" width="400">
-<img src="screenshots/Screenshot425.png" alt="Screenshot 12" width="400">
-<img src="screenshots/Screenshot426.png" alt="Screenshot 13" width="400">
-<img src="screenshots/Screenshot427.png" alt="Screenshot 14" width="400">
-<img src="screenshots/Screenshot428.png" alt="Screenshot 15" width="400">
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="screenshots/Screenshot409.png" alt="Screenshot 1" style="width: 30%;">
+    <img src="screenshots/Screenshot410.png" alt="Screenshot 2" style="width: 30%;">
+    <img src="screenshots/Screenshot411.png" alt="Screenshot 3" style="width: 30%;">
+    <img src="screenshots/Screenshot413.png" alt="Screenshot 4" style="width: 30%;">
+    <img src="screenshots/Screenshot414.png" alt="Screenshot 5" style="width: 30%;">
+    <img src="screenshots/Screenshot415.png" alt="Screenshot 6" style="width: 30%;">
+    <img src="screenshots/Screenshot416.png" alt="Screenshot 7" style="width: 30%;">
+    <img src="screenshots/Screenshot417.png" alt="Screenshot 8" style="width: 30%;">
+    <img src="screenshots/Screenshot418.png" alt="Screenshot 9" style="width: 30%;">
+    <img src="screenshots/Screenshot423.png" alt="Screenshot 10" style="width: 30%;">
+    <img src="screenshots/Screenshot424.png" alt="Screenshot 11" style="width: 30%;">
+    <img src="screenshots/Screenshot425.png" alt="Screenshot 12" style="width: 30%;">
+    <img src="screenshots/Screenshot426.png" alt="Screenshot 13" style="width: 30%;">
+    <img src="screenshots/Screenshot427.png" alt="Screenshot 14" style="width: 30%;">
+    <img src="screenshots/Screenshot428.png" alt="Screenshot 15" style="width: 30%;">
+</div>
+
 
 
 ---
