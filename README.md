@@ -23,7 +23,7 @@ Startups often struggle to access quality training and educational resources tai
 
 ## Key Features
 
-- Secure signup and login mechanisms
+- Secure signup, login and password reset mechanisms
 - Integration with Google accounts
 - Courses page showcasing a variety of skill-building courses
 - Individual course pages with detailed descriptions, syllabus, and learning outcomes
