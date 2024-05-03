@@ -112,23 +112,21 @@ python manage.py runserver
 
 ## Screenshots
 
-![Screenshot 1](screenshots/Screenshot409.png)
-![Screenshot 1](screenshots/Screenshot409.png)
-![Screenshot 2](screenshots/Screenshot410.png)
-![Screenshot 3](screenshots/Screenshot411.png)
-![Screenshot 4](screenshots/Screenshot413.png)
-![Screenshot 5](screenshots/Screenshot414.png)
-![Screenshot 6](screenshots/Screenshot415.png)
-![Screenshot 7](screenshots/Screenshot416.png)
-![Screenshot 8](screenshots/Screenshot417.png)
-![Screenshot 9](screenshots/Screenshot418.png)
-![Screenshot 10](screenshots/Screenshot423.png)
-![Screenshot 11](screenshots/Screenshot424.png)
-![Screenshot 12](screenshots/Screenshot425.png)
-![Screenshot 13](screenshots/Screenshot426.png)
-![Screenshot 14](screenshots/Screenshot427.png)
-![Screenshot 15](screenshots/Screenshot428.png)
-
+<img src="screenshots/Screenshot409.png" alt="Screenshot 1" width="400">
+<img src="screenshots/Screenshot410.png" alt="Screenshot 2" width="400">
+<img src="screenshots/Screenshot411.png" alt="Screenshot 3" width="400">
+<img src="screenshots/Screenshot413.png" alt="Screenshot 4" width="400">
+<img src="screenshots/Screenshot414.png" alt="Screenshot 5" width="400">
+<img src="screenshots/Screenshot415.png" alt="Screenshot 6" width="400">
+<img src="screenshots/Screenshot416.png" alt="Screenshot 7" width="400">
+<img src="screenshots/Screenshot417.png" alt="Screenshot 8" width="400">
+<img src="screenshots/Screenshot418.png" alt="Screenshot 9" width="400">
+<img src="screenshots/Screenshot423.png" alt="Screenshot 10" width="400">
+<img src="screenshots/Screenshot424.png" alt="Screenshot 11" width="400">
+<img src="screenshots/Screenshot425.png" alt="Screenshot 12" width="400">
+<img src="screenshots/Screenshot426.png" alt="Screenshot 13" width="400">
+<img src="screenshots/Screenshot427.png" alt="Screenshot 14" width="400">
+<img src="screenshots/Screenshot428.png" alt="Screenshot 15" width="400">
 
 
 ---
