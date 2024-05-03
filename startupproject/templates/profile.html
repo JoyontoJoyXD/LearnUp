@@ -1,0 +1,132 @@
+{% extends 'base.html' %} 
+{% block title %} Profile {% endblock title %} 
+{% block body %}
+
+<div class="container mt-2">
+  <h1 class="text-center">Welcome</h1>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div><a href="/" class="btn btn-primary"> Go Back</a></div>
+    </div>
+
+    {% for d in details %}
+    <div class="col-md-7">
+      {% include 'messages.html' %}
+      <div class="card p-3">
+        <div class="card-title">
+          <h3>Candidate Details</h3>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a
+              href="/candidateupdate/{{d.candidateId}}/"
+              class="btn btn-light d-grid gap-2 d-md-flex justify-content-md-end"
+              >Update Details</a
+            >
+          </div>
+        </div>
+        <div class="card-body">
+          <h5>Candidate Id : <b> {{d.candidateId}} </b></h5>
+          <hr />
+          <h5>Name : <b> {{d.firstName}} </b> <b> {{d.lastName}} </b></h5>
+          <hr />
+          <h5>Father Name : <b> {{d.fatherName}} </b></h5>
+          <hr />
+          <h5>Phone Number : <b> {{d.phoneNumber}} </b></h5>
+          <hr />
+          <h5>Alternate Number : <b> {{d.alternateNumber}} </b></h5>
+          <hr />
+          <h5>Email: <b> {{d.email}} </b></h5>
+          <hr />
+          <h5>College Name : <b> {{d.collegeName}} </b></h5>
+          <hr />
+          <h5>Address : <b> {{d.address}} </b></h5>
+          <hr />
+          <h5>Landmark : <b> {{d.landmark}} </b></h5>
+          <hr />
+          <h5>Street : <b> {{d.street}} </b></h5>
+          <hr />
+          <h5>City: <b> {{d.city}} </b></h5>
+          <hr />
+          <h5>Pincode : <b> {{d.pincode}} </b></h5>
+          <hr />
+          <h5>Company Name : <b> {{d.companyName}} </b></h5>
+          <hr />
+          <h5>Designation : <b> {{d.designation}} </b></h5>
+          <hr />
+          <h5>Qualification : <b> {{d.qualification}} </b></h5>
+          <hr />
+          <h5>Computer Knowledge : <b> {{d.computerKnowledge}} </b></h5>
+          <hr />
+          <h5>Course : <b> {{d.Course}} </b></h5>
+          <hr />
+          <h5>Enrollment Date : <b> {{d.timestamp}} </b></h5>
+          <hr />
+
+          <hr />
+          <h3>Trainer Assigned : {{d.trainer}}</h3>
+          <hr />
+          <h2>Payment Status</h2>
+          <hr />
+          <h4>Amount Paid : {{status.amount}}</h4>
+          <h4>Account Balance : {{status.balance}}</h4>
+          <h4>Payment Status : {{status.paymentstatus}}</h4>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% comment %} attendance display {% endcomment %}
+<div class="container mt-2">
+    <hr>
+<h1 class="text-center">Attendance Status</h1>
+<hr>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr class="table-primary">
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Login Time</th>
+            <th scope="col">Logout Time</th>
+            <th scope="col">Approved Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        {% for a in attendanceStats %}
+          <tr class="table-success">
+            <td>{{a.name}}</td>
+            <td>{{a.date}}</td>
+            <td>{{a.logintime}}</td>
+            <td>{{a.logouttime}}</td>
+            {% if a.approved %}
+            <td><i class="fa-solid fa-thumbs-up"></i> Approved</td>
+            {% else %}
+            <td> <i class="fa-solid fa-circle-xmark"></i> Not Approved</td>
+            {% endif %}
+            
+          </tr>
+        {% endfor %}
+         
+        </tbody>
+      </table>
+      
+      
+    
+
+</div>
+
+
+
+
+</div>
+
+
+<br>
+<br>
+<br>
+
+{% endblock body %}

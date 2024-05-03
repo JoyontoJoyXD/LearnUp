@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About    
+{% endblock title %} 
+
+{% block About %}
+active
+{% endblock About %}
+
+{% block body %}
+{% load static %}
+
+  <div class="container">
+    <div class="about-header">
+      <h1>About LearnUp: Empowering Startup Success</h1>
+      <img src="{% static 'images/startup.jpg' %}" alt="Startup Image" width="300" height="200">
+
+    </div>
+    
+    <div class="about-content">
+      <p>Welcome to LearnUp, where innovation and education come together to drive startup success. Our mission is to be your partner in launching and nurturing your entrepreneurial journey. LearnUp is more than just a platform; it's your dedicated launchpad for building a thriving startup.</p>
+    </div>
+
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <p>At LearnUp, we believe in a world where startups have easy access to tailored training and resources. Our core objectives embody this vision:</p>
+
+      <ul>
+        <li><strong>Innovative Learning Platform:</strong> We are committed to crafting a dynamic website that offers startups access to top-tier training and educational resources designed specifically for their unique needs.</li>
+
+        <li><strong>Personalized User Experience:</strong> Your success story is unique, and so are your learning needs. We focus on providing a user-centric experience with personalized course content and engaging learning experiences.</li>
+
+        <!-- Include the rest of your vision points here -->
+
+      </ul>
+    </div>
+
+    <div class="agile-approach">
+      <h2>Our Agile Approach</h2>
+      <p>Our development journey is fueled by the Scrum Agile methodology. It enables us to adapt and innovate swiftly. We don't just aim to meet your expectations; we strive to exceed them.</p>
+    </div>
+
+    <div class="join-community">
+      <h2>Join the LearnUp Community</h2>
+      <p>We invite you to embark on this exciting journey with us. LearnUp isn't just a platform; it's a community of like-minded individuals, passionate about startups and entrepreneurship. Here, your innovative ideas are transformed into thriving ventures.</p>
+
+      <p>At LearnUp, we're not just your educators; we're your partners in success. We're here to equip you with the knowledge and skills you need to navigate the unpredictable world of startups. Together, we'll build the future.</p>
+    </div>
+  </div>  
+{% endblock body %}

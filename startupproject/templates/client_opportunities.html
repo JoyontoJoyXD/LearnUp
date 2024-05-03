@@ -1,0 +1,150 @@
+<!-- templates/client_opportunities.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Client Opportunities
+{% endblock title %}
+
+{% block body %}
+<style>
+    .container {
+        margin-top: 50px;
+    }
+    .opportunity {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .opportunity h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .opportunity p {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    .opportunity ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .opportunity li {
+        margin-bottom: 5px;
+    }
+    .opportunity li strong {
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Opportunity 1: Social Media Marketing Campaign -->
+            <div class="opportunity">
+                <h3>Opportunity 1: Social Media Marketing Campaign</h3>
+                <p><strong>Description:</strong> Our company is seeking a skilled social media marketer to develop and execute a comprehensive marketing campaign across various social media platforms...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Social media marketing, content creation, ad management, analytics, branding</li>
+                    <li><strong>Duration:</strong> 3 months</li>
+                    <li><strong>Compensation:</strong> 3 Lakh TK/- per month</li>
+                    <li><strong>Contact:</strong> Please email your portfolio and a brief introduction to projects@company.com.</li>
+                    <li><strong>Deadline:</strong> June 15, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 2: Mobile App Development -->
+            <div class="opportunity">
+                <h3>Opportunity 2: Mobile App Development</h3>
+                <p><strong>Description:</strong> We're in need of an experienced mobile app developer to build a cross-platform mobile application for our business...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Mobile app development (iOS and Android), UI/UX design, backend integration, testing, deployment</li>
+                    <li><strong>Duration:</strong> 6 months</li>
+                    <li><strong>Compensation:</strong> Negotiable based on experience and milestones</li>
+                    <li><strong>Contact:</strong> Please send your resume and portfolio of previous mobile app projects to apps@company.com.</li>
+                    <li><strong>Deadline:</strong> July 10, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 3: Content Writing for Blog -->
+            <div class="opportunity">
+                <h3>Opportunity 3: Content Writing for Blog</h3>
+                <p><strong>Description:</strong> We're looking for a talented content writer to produce high-quality blog articles on topics related to technology and innovation...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Content writing, research, SEO optimization, topic ideation, adherence to style guidelines</li>
+                    <li><strong>Duration:</strong> Ongoing (multiple articles per month)</li>
+                    <li><strong>Compensation:</strong> 5500 TK/- per article</li>
+                    <li><strong>Contact:</strong> Interested writers can submit writing samples and topic suggestions to content@company.com.</li>
+                    <li><strong>Deadline:</strong> Rolling basis, ongoing recruitment</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 4: Graphic Design Project -->
+            <div class="opportunity">
+                <h3>Opportunity 4: Graphic Design Project</h3>
+                <p><strong>Description:</strong> Our company is seeking a creative graphic designer to work on a variety of design projects including logo design, branding materials, and digital assets...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Graphic design, Adobe Creative Suite, branding, typography, illustration</li>
+                    <li><strong>Duration:</strong> 2 months</li>
+                    <li><strong>Compensation:</strong> 2 Lakh TK/- per month</li>
+                    <li><strong>Contact:</strong> Please submit your portfolio and a brief introduction to design@company.com.</li>
+                    <li><strong>Deadline:</strong> August 1, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 5: Web Development Project -->
+            <div class="opportunity">
+                <h3>Opportunity 5: Web Development Project</h3>
+                <p><strong>Description:</strong> We're seeking a skilled web developer to create a modern and responsive website for our company...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Frontend and backend development, HTML, CSS, JavaScript, Python/Django</li>
+                    <li><strong>Duration:</strong> 4 months</li>
+                    <li><strong>Compensation:</strong> 4.5 Lakh TK/- per month</li>
+                    <li><strong>Contact:</strong> Please submit your portfolio and resume to webdev@company.com.</li>
+                    <li><strong>Deadline:</strong> September 15, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 6: Data Analyst Position -->
+            <div class="opportunity">
+                <h3>Opportunity 6: Data Analyst Position</h3>
+                <p><strong>Description:</strong> Our company is looking for a data analyst to interpret data, analyze results, and provide insights to enhance business decisions...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Data analysis, statistical analysis, data visualization, SQL, Python/R programming</li>
+                    <li><strong>Duration:</strong> 5 months</li>
+                    <li><strong>Compensation:</strong> Competitive salary based on experience</li>
+                    <li><strong>Contact:</strong> Please send your resume and cover letter to data@company.com.</li>
+                    <li><strong>Deadline:</strong> October 20, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 7: UI/UX Designer Position -->
+            <div class="opportunity">
+                <h3>Opportunity 7: UI/UX Designer Position</h3>
+                <p><strong>Description:</strong> We're hiring a UI/UX designer to create intuitive and visually appealing user interfaces for our digital products...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> UI/UX design, wireframing, prototyping, Adobe XD/Sketch/Figma</li>
+                    <li><strong>Duration:</strong> 3 months (with possibility of extension)</li>
+                    <li><strong>Compensation:</strong> Competitive salary</li>
+                    <li><strong>Contact:</strong> Please submit your portfolio and resume to uiux@company.com.</li>
+                    <li><strong>Deadline:</strong> November 5, 2024</li>
+                </ul>
+            </div>
+
+            <!-- Opportunity 8: Sales Executive Role -->
+            <div class="opportunity">
+                <h3>Opportunity 8: Sales Executive Role</h3>
+                <p><strong>Description:</strong> We're seeking dynamic individuals to join our sales team and drive revenue growth through effective sales strategies...</p>
+                <ul>
+                    <li><strong>Skills Required:</strong> Sales, negotiation, communication, customer relationship management</li>
+                    <li><strong>Duration:</strong> Full-time position</li>
+                    <li><strong>Compensation:</strong> Competitive salary + commission</li>
+                    <li><strong>Contact:</strong> Please send your resume and cover letter to sales@company.com.</li>
+                    <li><strong>Deadline:</strong> December 10, 2024</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

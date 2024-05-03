@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}
+    Courses    
+{% endblock title %} 
+{% block home %}
+active
+{% endblock home %}
+{% block extra_css %}
+<style>
+    /* Custom CSS for available courses page */
+    .card {
+        border: none;
+        border-radius: 15px;
+        background-color: #f8f9fa;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+        background-color: #fff;
+    }
+    .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #343a40;
+    }
+    .card-text {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    .stars {
+        color: #FFD700;
+    }
+    .btn-primary {
+        background-color: #007BFF;
+        border-color: #007BFF;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-outline-dark {
+        color: #343a40;
+        border-color: #343a40;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .btn-outline-dark:hover {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #343a40;
+    }
+</style>
+{% endblock extra_css %}
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Available Courses</h1>
+    {% include "messages.html" %}
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for c in courses %}
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ c.image.url }}" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <h3 class="card-title">{{ c.courseName }}</h3>
+                    <p class="card-text"><b>Fee:</b> {{ c.courseFee }} Taka | <b>Duration:</b> {{ c.courseDuration }} Months</p>
+                    <div class="stars">
+                        {% for _ in c.stars_list %}
+                            <i class="fa-regular fa-star"></i>
+                        {% endfor %}
+                    </div>
+                    <a href="/course/{{ c.courseName }}/" class="btn btn-primary mt-3">Know More</a>
+                    <a href="/enroll/" class="btn btn-outline-dark mt-3">Enroll</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock body %}

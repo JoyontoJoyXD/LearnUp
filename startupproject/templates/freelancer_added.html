@@ -1,0 +1,35 @@
+<!-- templates/freelancer_added.html -->
+
+{% extends 'base.html' %}
+{% block title %}
+    Freelancer Added
+{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h2 class="mb-0">Freelancer Added Successfully</h2>
+                </div>
+                <div class="card-body">
+                    {% if user.is_authenticated and user.is_freelancer %}
+                        <div class="alert alert-warning" role="alert">
+                            You've already registered as a freelancer.
+                        </div>
+                    {% else %}
+                        <div class="alert alert-success" role="alert">
+                            Thank you for joining as a new freelancer!
+                        </div>
+                    {% endif %}
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                        <a href="{% url 'client_opportunities' %}" class="btn btn-primary btn-lg mb-2">Access Client Opportunities</a>
+                        <a href="{% url 'freelancing' %}" class="btn btn-secondary btn-lg mb-2">Back to Freelancing Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

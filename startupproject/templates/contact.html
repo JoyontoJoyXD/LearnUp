@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}
+    Contact    
+{% endblock title %} 
+{% block Contact %}
+active
+{% endblock Contact %}
+{% block body %}
+
+
+<div class="container mt-4 p-2">
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+    <br>
+    <br>
+    <br>
+    
+      <h3 class="text-white bg-dark text-center p-3">Contact Us</h3>
+
+{% include 'messages.html' %}
+
+      <div class="card p-2">
+
+
+      <form action="/contact/" method="post">{% csrf_token %}
+        <div class="form-group">
+          <h5>
+            <span><i class="fas fa-user"></i> Name</span>
+          </h5>
+          <input type="text" class="form-control mb-3" name="name" required/>
+        </div>
+        <div class="form-group">
+          <h5>
+            <span><i class="fa-solid fa-envelope"></i> Email</span>
+          </h5>
+          <input type="email" value="{{user.email}}" class="form-control mb-3" name="email" required/>
+        </div>
+        <div class="form-group">
+          <h5>
+            <span><i class="fas fa-phone-alt"></i> Phone No.</span>
+          </h5>
+          <input type="number" class="form-control mb-3" name="num" required/>
+        </div>
+
+        <div class="form-group">
+          <h5>
+            <span><i class="far fa-question-circle"></i>How can i help you </span>
+          </h5>
+          <textarea type="text" class="form-control mb-3" name="desc" required ></textarea>
+        </div>
+       
+
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+     
+      </div>
+
+      </form>
+    </div>
+
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock body %}

@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block title %}
+    Update    
+{% endblock title %} 
+
+{% block body %}
+<div class="container mt-4">
+
+
+
+
+    <div class="row">
+        <h1 class="text-center">Update Details</h1>
+        <hr>
+            <div class="col-md-3">
+    
+                <div><a href="/candidateprofile/" class="btn btn-dark"> Go Back</a> </div>
+    
+    
+    
+            </div>
+    
+            <div class="col-md-6">
+    
+                {% include 'messages.html' %}
+    
+                <form action="/candidateupdate/{{data.candidateId}}/" method="post">{% csrf_token %}
+    
+                <div class="form-group">
+                    <label for="fname"><b>First Name </b></label>
+                    <input type="text" class="form-control" name="fname" value="{{data.firstName}}" id="fname" required>
+    
+                </div>
+    
+                <div class="form-group">
+                    <label for="lname"><b>Last Name </b></label>
+                    <input type="text" class="form-control" name="lname" id="lname" value="{{data.lastName}}" required>
+    
+                </div>
+                <div class="form-group">
+                    <label for="fathername"><b>Father Name </b></label>
+                    <input type="text" class="form-control" name="fatherName" id="fathername" value="{{data.fatherName}}" required>
+    
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone"><b>Mobile Number </b></label>
+                    <input type="tel" class="form-control" name="phone" id="phone" value="{{data.phoneNumber}}" required>
+    
+    
+                </div>
+                <div class="form-group">
+                    <label for="alternateNumber"><b>Alternate No.</b></label>
+                    <input type="number" class="form-control" name="alternateNumber" id="alternateNumber" value="{{data.alternateNumber}}" required>
+    
+    
+                </div>
+                <div class="form-group">
+    
+                
+                    <input type="hidden" name="email" value="{{request.user.email}}" class="form-control" id="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="form-group">
+    
+                    <label for="college"><b>College </b></label>
+                    <input type="text" name="college" class="form-control" id="college" placeholder="Enter College Name"
+                        value="{{data.collegeName}}" required>
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="form-group">
+                    <label for="addr"><b>Address </b></label>
+                    <input class="form-control" type="text" name="addr" id="addr" value="{{data.address}}" required>
+                </div>
+                <div class="form-group">
+    
+                    <label for="landmark"><b>Landmark</b> </label>
+                    <input class="form-control" type="text" name="landmark" id="landmark" value="{{data.landmark}}" required>
+    
+                </div>
+                <div class="form-group">
+    
+                    <label for="street"><b>Street</b> </label>
+                    <input class="form-control" type="text" name="street" id="street" value="{{data.street}}" required>
+    
+                </div>
+                <div class="form-group">
+    
+                    <label for="pcode"><b>Pin Code</b> </label>
+                    <input class="form-control" type="number" name="pcode" id="pcode" value="{{data.pincode}}" required>
+    
+                </div>
+                <div class="form-group">
+                    <label for="city"><b>City</b></label>
+                    <input class="form-control" type="text" name="city" id="city" value="{{data.city}}" required>
+    
+                </div>
+             
+                <div class="form-group">
+                    <label for="companyname"> <b>Company Name</b></label>
+                    <input type="text" name="companyname" class="form-control" id="companyname" placeholder="Freshers Mention as NA" value="{{data.companyName}}" required>
+    
+                </div>
+                <div class="form-group">
+                    <label for="Designation"><b>Designation</b></label>
+                    <input class="form-control" type="text" name="Designation" id="Designation" value="{{data.designation}}" required>
+    
+                </div>
+                <div class="form-group">
+                    <label for="Qualification"><b>Qualification</b></label>
+                    <input class="form-control" type="text" name="Qualification" id="Qualification" value="{{data.qualification}}" required>
+    
+                </div>
+    
+    <br>
+    
+    
+    
+                <div class="form-group">
+                    <label for="scourse"><b>Select Course</b></label>
+                    <select class="form-control" id="scourse" name="scourse"  required>
+    
+                <option value="{{data.Course}}">{{data.Course}}</option>
+                   {% for c in courses %}
+                   
+                   <option value="{{c.courseName}}">{{c.courseName}}</option>
+                  
+    
+                   {% endfor %}
+                   
+                    </select>
+                  </div>
+    
+    
+    
+                <hr>
+                <div class="d-grid gap-2 mb-3">
+                    <button type="submit" class="btn btn-success get-started-btn">Update</button>
+                </div>
+            </form>
+            </div>
+    
+    
+    
+     
+    
+        <div class="col-md-3"></div>
+    
+    </div>
+</div>
+
+
+
+
+
+{% endblock body %}

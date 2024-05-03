@@ -1,0 +1,28 @@
+pip install django
+pip install django-allauth
+pip install Pillow
+pip install django-ckeditor
+pip install six
+
+# for migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# for creating the superuser
+python manage.py createsuperuser
+
+# to run the project
+python manage.py runserver
+
+#admin credentails
+username: anees
+password : anees
+
+
+# creating a project
+djang-admin startproject project_name
+cd project_name
+# creating a application
+python manage.py startapp app_name
+python manage.py migrate
+python manage.py runserver

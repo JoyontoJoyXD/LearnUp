@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Freelancer Profile
+{% endblock title %}
+
+{% block body %}
+    <h1>{{ freelancer.name }}'s Profile</h1>
+    <p>Email: {{ freelancer.email }}</p>
+    <p>Bio: {{ freelancer.bio }}</p>
+    <p>Skills: {{ freelancer.skills }}</p>
+{% endblock body %}

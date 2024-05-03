@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Add Freelancer
+{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Freelancer Registration</h2>
+                </div>
+                <div class="card-body">
+                    {% if messages %}
+                        <div class="alert alert-danger" role="alert">
+                            <ul class="mb-0">
+                                {% for message in messages %}
+                                    <li>{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+
+                    <form method="post" action="{% url 'add_freelancer' %}" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bio" class="form-label">Bio</label>
+                            <textarea class="form-control" id="bio" name="bio" rows="3" placeholder="Enter your bio" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your bio.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="skills" class="form-label">Skills</label>
+                            <input type="text" class="form-control" id="skills" name="skills" placeholder="Enter your skills" required>
+                            <div class="invalid-feedback">
+                                Please enter your skills.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="{% url 'client_opportunities' %}" class="btn btn-secondary">Client Opportunities</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

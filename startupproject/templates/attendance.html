@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}
+    Attendence    
+{% endblock title %} 
+{% block Attendance %}
+active
+{% endblock Attendance %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Application</title>
+    <!-- Add your CSS styles for uniqueness here -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center mb-4">Attendance Application</h1>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        {% include 'messages.html' %}
+                        <form action="/attendance/" method="post">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="name" class="form-label"><b>Name</b></label>
+                                <input type="text" class="form-control" value="{{user.first_name}}" name="name" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="hidden" name="email" value="{{request.user.email}}" class="form-control" id="email" placeholder="abc@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label"><b>Date</b></label>
+                                <input type="date" name="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="logintime" class="form-label"><b>Login Time</b></label>
+                                <input type="time" name="logintime" class="form-control" id="logintime" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="logouttime" class="form-label"><b>Logout Time</b></label>
+                                <input type="time" name="logouttime" class="form-control" id="logouttime" required>
+                            </div>
+                            <hr>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success btn-lg">Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+{% endblock body %}

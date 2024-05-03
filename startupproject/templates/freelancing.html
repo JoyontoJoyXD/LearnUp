@@ -1,0 +1,19 @@
+<!-- templates/freelancing.html -->
+
+{% block title %}
+    Freelancing
+{% endblock title %}
+
+{% block body %}
+    <!-- Add Freelancer Form -->
+    <div class="add-freelancer-form" style="
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    ">
+        {% include 'add_freelancer.html' %}
+    </div>
+
+
+{% endblock body %}
