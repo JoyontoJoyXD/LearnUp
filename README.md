@@ -104,9 +104,9 @@ python manage.py migrate
 Create Super User:
 python manage.py createsuperuser
 
-Finally, start the HTTP server at the default port and visit localhost:8000/:
-python manage.py runserver
+Finally, start the HTTP server at the default port and visit localhost:8000/
 
+python manage.py runserver
 
 ---
 
