@@ -3,7 +3,9 @@
 
 ## Table of Contents
 
-- [Problem Details](#problem-details)
+- [Project Description](#project-description)
+- [Languages Used](#languages-used)
+- [Framework](#framework)
 - [Key Features](#key-features)
 - [Technology Stack](#technology-stack)
 - [Task Responsibilities](#task-responsibilities)
@@ -15,10 +17,24 @@
 
 ---
 
-## Problem Details
+## Project Description
 
-Startups often struggle to access quality training and educational resources tailored to their unique needs. Existing online learning platforms lack tailored content and features essential for startup success. There's a need for a dynamic website that seamlessly integrates various learning and administrative functions while offering a personalized and engaging experience.
+LearnUp is an innovative learning platform dedicated to empowering startups globally. Our platform offers a diverse array of skill-building courses, personalized learning experiences, and robust administrative functionalities tailored to the unique needs of startup ventures. With a user-friendly interface, seamless integration with Google accounts, and advanced search options, LearnUp provides startups with the tools they need to enhance their skills, knowledge, and success in today's competitive business landscape.
 
+---
+
+## Languages Used
+
+- HTML
+- CSS
+- Python
+
+---
+
+## Framework
+
+- Django
+  
 ---
 
 ## Key Features
