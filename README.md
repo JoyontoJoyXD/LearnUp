@@ -153,5 +153,5 @@ python manage.py runserver
 ## Presentation
 
 You can watch our presentation video [here](https://drive.google.com/file/d/1O5wJxj5Fqzj6JDIWQ0G5SXPUXAgkUHIK/view?usp=drive_link).
-[![Presentation Video](https://example.com/thumbnail_image.png)](https://drive.google.com/file/d/1O5wJxj5Fqzj6JDIWQ0G5SXPUXAgkUHIK/view?usp=drive_link)
+Or Click Here, [![Presentation Video](https://drive.google.com/file/d/1O5wJxj5Fqzj6JDIWQ0G5SXPUXAgkUHIK/view?usp=drive_link)
 
