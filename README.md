@@ -1,6 +1,11 @@
 
 # LearnUp: Empowering Startups Worldwide
 
+## Contributors
+- **Joyanto Das (20201005)**
+- **Jannatul Ferdus Shuchona (20201021)**
+- **Sumaia Akter (20201031)**
+
 ## Table of Contents
 
 - [Project Description](#project-description)
